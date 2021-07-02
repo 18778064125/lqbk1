@@ -19,6 +19,11 @@ public class UserController {
             users.setUsername("wangwu");
             users.setPassword("ww1234");
             return users;
+        }@RequestMapping("dxyz.do")
+        public String dxyz(Users user){
+            //System.out.println("dedaode:"+user.getUsername());
+            //System.out.println("dedaode:" + user.getPassword());
+            return "forward:dxyz.jsp";
         }
     }
 
